@@ -22,7 +22,7 @@ body {
    HERO
    ========================================== */
 .hero {
-    height: 100vh;
+    height: 10vh;
     background-image: url(img/22bfb600-7cce-47bd-8f80-0fe6d1cf68b6.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -525,4 +525,5 @@ footer {
     background-color: yellow !important;
     color: black !important;
     font-weight: bold;
+
 }
