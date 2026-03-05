@@ -1,1 +1,217 @@
-hola
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista corazonista</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- ==========================================
+     HERO / NAVEGACIÓN
+     ========================================== -->
+<section class="hero">
+    <nav>
+        <div class="logo">
+            <img src="img/Logo corazonista 40 años-02.png" alt="Logo del Restaurante">
+        </div>
+        <ul class="menu-nav">
+            <li><a href="#inicio">Inicio     </a></li>
+            <li><a href="#nosotros">Historia     </a></li>
+            <li><a href="#menu">Talentos    </a></li>
+            <li><a href="#reserva">Noticias Corazonistas </a></li>
+            <li><a href="#reserva">Deportivo </a></li>
+            <li><a href="#reserva">Semilleros </a></li>
+            <li><a href="#reserva">Pastoral </a></li>
+            <li><a href="#reserva">Eventos </a></li>
+        </ul>
+    </nav>
+    
+    <div class="contenido">
+        
+        
+        
+        <h1 id="titulo-restaurante"> Bienvenidos a la revista  <br> corazonista </h1>
+        
+        
+          
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     SECCIÓN MENÚ
+     ========================================== -->
+     <section class="menu" id="menu">
+        <h2>Nuestro Menú</h2>
+        <div class="menu-container">
+            <div class="card">
+                <img src="img/primerFondo.jpg" alt="Nuestros estudiantes"
+    height="350px"  width="350px">
+                <h3>Nuestra historia</h3>
+                <h2>Desde la fé ardiende del padre André Coindre, hasta el
+    amor de los hermanos de la actualidad. Los corazonistas tenemos una
+    historia leno de momentos mágicos que nos mantienen unidos como
+    comunidad.</h2>
+                <button class="btn-outline">Ver</button>
+            </div>
+            <div class="card">
+                <img src="img/programacion.jpg" alt="Programación"
+    height="350px"  width="350px">
+                <h3>Historia CSC</h3>
+                <h2>En Marinilla se esconde un hogar maravilloso donde se
+    han vivido momentos inolvidables. Nuestro colegio tiene una historia
+    que es muy importante</h2>
+                <button class="btn-outline">Ver</button>
+            </div>
+            <div class="card">
+                <img src="img/grados.jpg" alt="Nuestra Comunidad"
+    height="350px"  width="350px">
+                <h3>Nuestra comunidad</h3>
+                <h2>Descubre más acerca del rol que están jugando nuestros
+    directivos en este momento</h2>
+                <button class="btn-outline">Ver</button>
+            </div>
+              <div class="card">
+                <img src="img/pastoral.jpg" alt="pastoral" height="350px"
+    width="350px">
+                <h3>Pastoral corazonista</h3>
+                <h2>Conoce acerca de nuestro movimiento resplandor corazonista</h2>
+                <button class="btn-outline">Ver</button>
+            </div>
+        </div>
+    </section>
+
+<!-- ==========================================
+     SECCIÓN SOBRE NOSOTROS
+     ========================================== -->
+<section class="nosotros" id="nosotros">
+    <div class="nosotros-img">
+        <img src="sobre nosotros.png" alt="Sobre Nosotros">
+    </div>
+    <div class="about-text">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Disfruta el arte de la alta cocina con las magistrales
+            creaciones de nuestro chef y un servicio excepcional.
+        </p>
+        <button class="btn-outline">Conoce Más</button>
+    </div>
+</section>
+
+<!-- ==========================================
+     SECCIÓN RESERVAS
+     ========================================== -->
+<section class="reservas" id="reserva">
+    <h2>Reservar Mesa</h2>
+
+    <div class="form-reserva">
+        <input type="text" id="nombreCliente" placeholder="Nombre del cliente">
+        <input type="date" id="fechaReserva">
+        <input type="time" id="horaReserva">
+        <select id="personas">
+            <option value="1">1 Persona</option>
+            <option value="2">2 Personas</option>
+            <option value="3">3 Personas</option>
+            <option value="4">4 Personas</option>
+        </select>
+        <button id="btnReservar" class="btn-primary">Reservar Ahora</button>
+        <button id="btnCancelar">Cancelar Última Reserva</button>
+    </div>
+
+    <p id="mensajeReserva"></p>
+
+    <h3>Mesas Disponibles</h3>
+
+    <div id="contadorMesas">
+        <span id="mesasDisponiblesNum">5</span> de
+        <span id="mesasTotalNum">5</span> mesas disponibles
+        &nbsp;|&nbsp;
+        <span id="mesasOcupadasNum">0</span> ocupadas
+    </div>
+
+    <button id="btnMostrarMesas">Ver detalle de mesas</button>
+    <ul id="listaMesas"></ul>
+    <p id="resultadoMesas"></p>
+
+    <h3>Lista de Reservas</h3>
+    <ul id="listaReservas"></ul>
+</section>
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+<footer>
+    <p>1234 Calle Culinaria, Ciudad</p>
+    <p>Llámanos: (123) 456-7890</p>
+</footer>
+
+
+<!-- ==========================================
+      DOM 
+     ========================================== -->
+<section class="taller-dom">
+    <h2>Panel de Control </h2>
+
+    <!-- PARTE 1 — Selección de Elementos -->
+    <div class="dom-bloque">
+        <h3>Parte 1 · Selección de Elementos</h3>
+        <p id="eslogan">La mejor experiencia gastronómica</p>
+        <ul id="lista-menu">
+            <li id="plato1" class="plato-menu">Entrada Especial</li>
+            <li id="plato2" class="plato-menu">Filete Premium</li>
+            <li id="plato3" class="plato-menu">Postre de la Casa</li>
+            <li id="plato4" class="plato-menu">Bebida Artesanal</li>
+        </ul>
+    </div>
+
+    <!-- PARTE 2 — Modificación de Contenido -->
+    <div class="dom-bloque">
+        <h3>Parte 2 · Modificación de Contenido</h3>
+
+        <div class="dom-fila">
+            <input type="text" id="nuevoNombre" placeholder="Nuevo nombre del restaurante">
+            <button id="btnActualizar">Actualizar Nombre</button>
+        </div>
+
+        <div class="dom-fila">
+            <input type="text" id="nuevoPlato" placeholder="Nuevo plato">
+            <button id="btnAgregar">Agregar al Menú</button>
+            <button id="btnEliminar">Eliminar último plato</button>
+        </div>
+
+        <div class="dom-fila">
+            <p id="estadoMesa">Estado: Mesa disponible</p>
+            <button id="btnMesa">Cambiar disponibilidad</button>
+        </div>
+    </div>
+
+    <!-- PARTE 3 — Manipulación de Estilos -->
+    <div class="dom-bloque">
+        <h3>Parte 3 · Manipulación de Estilos</h3>
+
+        <div class="dom-fila">
+            <button id="modoDia">☀️ Modo Día</button>
+            <button id="modoNoche">🌙 Modo Noche</button>
+            <button id="modoEspecial">✨ Modo Especial</button>
+        </div>
+
+        <div class="dom-fila">
+            <button id="btnDestacar">Destacar plato del día</button>
+            <button id="btnOferta">Agregar Oferta</button>
+            <button id="btnQuitarOferta">Quitar Oferta</button>
+        </div>
+
+        <div class="dom-fila">
+            <button id="btnMenu">Cambiar Eslogan</button>
+            <button id="btnMostrar">Mostrar / Ocultar Menú</button>
+        </div>
+
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

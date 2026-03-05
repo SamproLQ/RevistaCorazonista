@@ -1,0 +1,528 @@
+/* ==========================================
+   RESET Y BASE
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+body {
+    background-image: url(fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Century Gothic" ;
+    
+}
+
+
+/* ==========================================
+   HERO
+   ========================================== */
+.hero {
+    height: 100vh;
+    background-image: url(img/22bfb600-7cce-47bd-8f80-0fe6d1cf68b6.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(8, 8, 2);
+    padding: 20px 60px;
+}
+
+
+/* ==========================================
+   NAVEGACIÓN
+   ========================================== */
+nav {
+    padding: 20px 50px;
+    background-color: rgb(224, 56, 56);
+    opacity: 0.8;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+    
+}
+
+.logo img{
+    height: 300px;
+    
+}
+
+.logo span {
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: white;
+}
+
+.menu-nav a {
+    font-size: 1.2em;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-nav a:hover {
+    color: rgb(97, 8, 8);
+    text-decoration: underline;
+}
+
+.btn-nav {
+    font-size: 1.2em;
+    padding: 8px 15px;
+    background: transparent;
+    border: 1px solid #070605;
+    color: #080806;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.imagen1{
+    width: 100px;
+    height:60px
+}
+.btn-nav:hover {
+    background: #61605d;
+    color: black;
+}
+
+
+/* ==========================================
+   CONTENIDO HERO
+   ========================================== */
+.contenido {
+    margin-top: 150px;
+    max-width: 2000px;
+   
+    
+    
+}
+.contenido {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+  
+  .contenido {
+    background: rgba(32, 40, 85, 0.6); /* fondo oscuro semitransparente */
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+.contenido h1 {
+    font-size: 70px;
+    margin: 40px 0;
+}
+.contenido h2,
+.contenido h3 {
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.btn1 {
+    padding: 10px 20px;
+    
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1:hover {
+    background: #b8962e;
+}
+
+.btn2 {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid gold;
+    color: gold;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn2:hover {
+    background: gold;
+    color: black;
+}
+
+
+/* ==========================================
+   BOTONES GLOBALES
+   ========================================== */
+.btn-primary {
+     background: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+} 
+
+.btn-primary:hover {
+     background: #d4af37;
+    color: #000;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #eeeeee;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #fcebeb;
+    color: rgb(151, 135, 135);
+}
+
+
+/* ==========================================
+   SECCIÓN MENÚ
+   ========================================== */
+.menu {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: rgb(224, 56, 56);
+}
+
+.menu h2 {
+    margin-bottom: 50px;
+    color: #f1f1f1;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+}
+
+.card {
+    background:rgb(29, 29, 80);
+    opacity: 0.9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    flex: 1;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+
+
+/* ==========================================
+   SECCIÓN SOBRE NOSOTROS
+   ========================================== */
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 10%;
+}
+
+.nosotros h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.nosotros-img {
+    flex: 1;
+}
+
+.nosotros-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   SECCIÓN RESERVAS
+   ========================================== */
+.reservas {
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.reservas h2,
+.reservas h3 {
+    color: #141209;
+    margin-bottom: 20px;
+}
+
+.reservas h3 {
+    margin-top: 30px;
+}
+
+.form-reserva {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-reserva input,
+.form-reserva select {
+    padding: 10px;
+    border: 1px solid #d4af37;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-reserva input:focus,
+.form-reserva select:focus {
+    border-color: #fff;
+}
+
+#btnCancelar {
+    background: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#btnCancelar:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+/* Contador de mesas en tiempo real */
+#contadorMesas {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 12px 28px;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    font-size: 1.1em;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+#mesasDisponiblesNum {
+    color: lightgreen;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#mesasTotalNum {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+#mesasOcupadasNum {
+    color: #e74c3c;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#listaReservas,
+#listaMesas {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#listaReservas li,
+#listaMesas li {
+    background: #1a1a1a;
+    margin: 8px auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    border-left: 4px solid #d4af37;
+    transition: 0.3s;
+}
+
+#listaReservas li:hover,
+#listaMesas li:hover {
+    background: #222;
+    transform: scale(1.03);
+}
+
+#mensajeReserva,
+#resultadoMesas {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: gold;
+    border-top: 1px solid #d4af3755;
+}
+
+
+/* ==========================================
+   TALLER DOM — PANEL DE CONTROL
+   ========================================== */
+.taller-dom {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.taller-dom > h2 {
+    color: #d4af37;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.dom-bloque {
+    background-color: #2a2818;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.dom-bloque h3 {
+    color: #d4af37;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d4af3755;
+    padding-bottom: 10px;
+}
+
+.dom-fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.taller-dom input[type="text"] {
+    padding: 20px 12px;
+    border: 1px solid #d4af37;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.taller-dom button {
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: 0.3s;
+}
+
+.taller-dom button:hover {
+    background: #d4af37;
+    color: black;
+}
+
+#lista-menu {
+    list-style: none;
+    margin: 15px auto;
+    display: inline-block;
+    text-align: left;
+}
+
+#lista-menu li {
+    padding: 6px 12px;
+    border-left: 3px solid #d4af37;
+    margin-bottom: 6px;
+    transition: 0.3s;
+}
+
+#lista-menu li:hover {
+    background: #1a1a1a;
+}
+
+#eslogan {
+    font-style: italic;
+    color: #f1c40f;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+#estadoMesa {
+    font-size: 1em;
+    color: #fff;
+}
+
+.dom-fila label
+.dom-fila input[type="range"] {
+    color: #d4af37;
+    margin-top: 100px;
+}
+
+#modoEspecial {
+    background: linear-gradient( #4b0082) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: bold;
+}
+
+#modoEspecial:hover {
+    opacity: 0.85;
+}
+
+/* Clase oferta (Parte 3 - classList) */
+.oferta {
+    border: 2px solid red !important;
+    background-color: yellow !important;
+    color: black !important;
+    font-weight: bold;
+}
