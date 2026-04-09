@@ -217,15 +217,15 @@ const contenidos = {
 
 function galletas(titulo, subtitulo, clave) {
     const data = contenidos[clave] || {};
-    document.getElementById('botonTitulo').textContent = titulo;
-    document.getElementById('botonSubtitulo').textContent = data.subtitulo || subtitulo;
-    document.getElementById('botonCuerpo').innerHTML = data.cuerpo || '<p>Contenido en construcción.</p>';
-    document.getElementById('botonOverlay').classList.add('activo');
+    document.getElementById('modalTitulo').textContent = titulo;
+    document.getElementById('modalSubtitulo').textContent = data.subtitulo || subtitulo;
+    document.getElementById('modalCuerpo').innerHTML = data.cuerpo || '<p>Contenido en construcción.</p>';
+    document.getElementById('modalOverlay').classList.add('activo');
     document.body.style.overflow = 'hidden';
 }
 
 function cGalletas() {
-    document.getElementById('botonOverlay').classList.remove('activo');
+    document.getElementById('modalOverlay').classList.remove('activo');
     document.body.style.overflow = '';
 }
 
