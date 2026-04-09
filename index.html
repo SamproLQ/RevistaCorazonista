@@ -3,245 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revista corazonista</title>
+    <title>Revista Corazonista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-<!-- ==========================================
-     HERO / NAVEGACIÓN
-     ========================================== -->
+<!-- GALLETICAS -->
+<div class="modal-overlay" id="modalOverlay" onclick="cerrarModal()">
+    <div class="modal-panel" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <div class="modal-deco-top">
+                <span class="modal-deco-line"></span>
+                <span class="modal-deco-cross"> </span>
+                <span class="modal-deco-line"></span>
+            </div>
+            <h2 class="modal-title" id="modalTitulo">Título</h2>
+            <p class="modal-subtitle" id="modalSubtitulo">Subtítulo</p>
+            <div class="modal-deco-bottom">
+                <span class="modal-deco-dot"></span>
+                <span class="modal-deco-dot"></span>
+                <span class="modal-deco-dot"></span>
+            </div>
+        </div>
+        <div class="modal-body" id="modalCuerpo">
+            <p>Contenido en construcción...</p>
+        </div>
+        <button class="modal-close" onclick="cerrarModal()">✕ Cerrar</button>
+    </div>
+</div>
+
+<!-- HERO / NAVEGACIÓN -->
 <section class="hero">
-    <nav>
+    <nav class="hero2">
         <div class="logo">
-            <img src="img/Logo corazonista 40 años-02.png" alt="Logo del Restaurante">
+            <img src="img/Logo corazonista 40 años-02.png" alt="Logo Corazonista">
         </div>
         <ul class="menu-nav">
-            <li><a href="#menu">Inicio     </a></li>
-            <li><a href="#menu">Historia     </a></li>
-            <li><a href="#menu">Talentos    </a></li>
-            <li><a href="#menu">Noticias Corazonistas </a></li>
-            <li><a href="#menu">Deportivo </a></li>
-            <li><a href="#menu">Semilleros </a></li>
-            <li><a href="#menu">Pastoral </a></li>
-            <li><a href="#menu">Eventos </a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Historia</a></li>
+            <li><a href="#menu">Talentos</a></li>
+            <li><a href="#menu">Noticias</a></li>
+            <li><a href="#menu">Deportivo</a></li>
+            <li><a href="#menu">Semilleros</a></li>
+            <li><a href="#menu">Pastoral</a></li>
+            <li><a href="#menu">Eventos</a></li>
         </ul>
     </nav>
-    
-    <div class="contenido">
-        
-        
-        
-        <h1 id="titulo-restaurante"> Bienvenidos a la revista  <br> corazonista </h1>
-        
-        
-          
-        </div>
-    </div>
+
+    <div class="contenido" id="inicio">
+        <div class="hero-badge">  Edición 2026  </div>
+        <h1 id="titulo-restaurante">Bienvenidos a la<br><em>Revista Corazonista</em></h1>
+        <p class="hero-sub">Marinilla · Antioquia · Colombia</p>
     </div>
 </section>
 
-<!-- ==========================================
-     SECCIÓN MENÚ
-     ========================================== -->
-     <section class="menu" id="menu">
-        <h2>Nuestro colegio</h2>
-        <div class="menu-container">
-            <div class="card">
-                <img src="img/primerFondo.jpg" alt="Nuestros estudiantes" height="300px"  width="350px">
+<!-- SECCIÓN MENÚ -->
+<section class="menu" id="menu">
+    <div class="section-header">
+        <span class="section-tag">Explora</span>
+        <h2>Nuestro Colegio</h2>
+        <div class="section-divider"><span> </span></div>
+    </div>
+
+    <div class="menu-container">
+        <div class="card" onclick="galletas('Nuestra Historia','La historia de la Congregación','historia')">
+            <div class="card-img-wrap">
+                <img src="img/primerFondo.jpg" alt="Nuestra Historia">
+                <div class="card-tag">Historia</div>
+            </div>
+            <div class="card-body">
                 <h3>Nuestra Historia</h3>
-                <h2>Desde la fé ardiende del padre André Coindre, hasta el amor de los hermanos de la actualidad. Los corazonistas tenemos una historia mágica</h2>
-                <button class="btn-outline">Ver</button>
+                <p>Desde la fe ardiente del padre André Coindre, hasta el amor de los hermanos de la actualidad.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
             </div>
-            <div class="card">
-                <img src="img/programacion.jpg" alt="Programación" height="300px"  width="350px">
+        </div>
+
+        <div class="card" onclick="galletas('Historia CSC','Historia del Colegio Sagrado Corazón','historia-csc')">
+            <div class="card-img-wrap">
+                <img src="img/programacion.jpg" alt="Historia CSC">
+                <div class="card-tag">Historia</div>
+            </div>
+            <div class="card-body">
                 <h3>Historia CSC</h3>
-                <h2>En Marinilla se esconde un hogar maravilloso donde se han vivido momentos inolvidables. Nuestro colegio tiene una historia que es muy importante</h2>
-                <button class="btn-outline">Ver</button>
+                <p>En Marinilla se esconde un hogar maravilloso donde se han vivido momentos inolvidables.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
             </div>
-            <div class="card">
-                <img src="img/grados.jpg" alt="Nuestra Comunidad" height="300px"  width="350px">
+        </div>
+
+        <div class="card" onclick="galletas('Talentos Corazonistas','Orgullo y excelencia','talentos')">
+            <div class="card-img-wrap">
+                <img src="img/grados.jpg" alt="Talentos">
+                <div class="card-tag">Talentos</div>
+            </div>
+            <div class="card-body">
                 <h3>Talentos Corazonistas</h3>
-                <h2>Nuestros estudiantes gozan de un sin fin de talentos que nos llenan de orgullo y </h2>
-                <button class="btn-outline">Ver</button>
+                <p>Nuestros estudiantes gozan de un sinfín de talentos que nos llenan de orgullo.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
             </div>
-              <div class="card">
-                <img src="img/pastoral.jpg" alt="pastoral" height="300px" width="350px">
+        </div>
+
+        <div class="card" onclick="galletas('Pastoral Corazonista','Movimiento Resplandor','pastoral')">
+            <div class="card-img-wrap">
+                <img src="img/pastoral.jpg" alt="Pastoral">
+                <div class="card-tag">Pastoral</div>
+            </div>
+            <div class="card-body">
                 <h3>Pastoral Corazonista</h3>
-                <h2>Conoce acerca de nuestro movimiento resplandor corazonista</h2>
-                <button class="btn-outline">Ver</button>
-            </div>
-            <div class="card">
-                <img src="img/logros.jpg" alt="Logros académicos" height="300px" width="350px">
-                <h3>Logros académicos</h3>
-                <h2>Conoce acerca de los logros academicos de nuestros estudiantes</h2>
-                <button class="btn-outline">Ver</button>
+                <p>Conoce nuestro movimiento Resplandor Corazonista y su impacto en la comunidad.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
             </div>
         </div>
-        <br></br>
-        <div class="menu-container">
-            <div class="card">
-                <img src="img/pastoral.jpg" alt="pastoral" height="300px" width="350px">
+
+        <div class="card" onclick="galletas('Logros Académicos','Excelencia estudiantil','logros')">
+            <div class="card-img-wrap">
+                <img src="img/logros.jpg" alt="Logros">
+                <div class="card-tag">Académico</div>
+            </div>
+            <div class="card-body">
+                <h3>Logros Académicos</h3>
+                <p>Conoce los logros académicos de nuestros estudiantes destacados.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-divider" style="margin: 50px 0 40px;"><span> </span></div>
+
+    <div class="menu-container">
+        <div class="card" onclick="galletas('Nuestro Seminario','Formación vocacional','seminario')">
+            <div class="card-img-wrap">
+                <img src="img/pastoral.jpg" alt="Seminario">
+                <div class="card-tag">Fe</div>
+            </div>
+            <div class="card-body">
                 <h3>Nuestro Seminario</h3>
-                <h2>Conoce acerca de nuestro seminario corazonista</h2>
-                <button class="btn-outline">Ver</button>
-            </div>
-            <div class="card">
-                <img src="img/pastoral.jpg" alt="pastoral" height="300px" width="350px">
-                <h3>Nuestra Granja</h3>
-                <h2>Visualiza nuestra granja corazonista</h2>
-                <button class="btn-outline">Ver</button>
-            </div>
-            <br>
-            <div class="card">
-                <img src="img/pastoral.jpg" alt="pastoral" height="300px" width="350px">
-                <h3>Semilleros Corazonistas</h3>
-                <h2>Consulta sobre nuestros Semilleros deportivos y culturales</h2>
-                <button class="btn-outline">Ver</button>
-            </div>
-            <div class="card">
-                <img src="img/pastoral.jpg" alt="pastoral" height="300px" width="350px">
-                <h3>Eventos Corazonistas</h3>
-                <h2>Mira información sobre nuestros eventos pasados y próximos</h2>
-                <button class="btn-outline">Ver</button>
-            </div>
-            <div class="card">
-                <img src="img/pastoral.jpg" alt="pastoral" height="300px" width="350px">
-                <h3>Prom 2026</h3>
-                <h2>Conoce a la Prom 2026</h2>
-                <button class="btn-outline">Ver</button>
+                <p>Conoce nuestro seminario corazonista y su misión formadora.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
             </div>
         </div>
-    </section>
 
-<!-- ==========================================
-     SECCIÓN SOBRE NOSOTROS
-     ========================================== -->
-<section class="nosotros" id="nosotros">
-    <div class="nosotros-img">
-        <img src="sobre nosotros.png" alt="Sobre Nosotros">
-    </div>
-    <div class="about-text">
-        <h2>Sobre Nosotros</h2>
-        <p>
-            Disfruta el arte de la alta cocina con las magistrales
-            creaciones de nuestro chef y un servicio excepcional.
-        </p>
-        <button class="btn-outline">Conoce Más</button>
+        <div class="card" onclick="galletas('Asopadres','Asociación de padres de familia','Asopadres')">
+            <div class="card-img-wrap">
+                <img src="img/pastoral.jpg" alt="Asopadres">
+                <div class="card-tag">Aso</div>
+            </div>
+            <div class="card-body">
+                <h3>Asociación de padres de familia</h3>
+                <p>Asociación que une a las familias y fortalecer la comunidad educativa.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
+            </div>
+        </div>
+
+        <div class="card" onclick="galletas('Semilleros Corazonistas','Deporte y cultura','semilleros')">
+            <div class="card-img-wrap">
+                <img src="img/pastoral.jpg" alt="Semilleros">
+                <div class="card-tag">Semilleros</div>
+            </div>
+            <div class="card-body">
+                <h3>Semilleros Corazonistas</h3>
+                <p>Consulta sobre nuestros semilleros deportivos y culturales.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
+            </div>
+        </div>
+
+        <div class="card" onclick="galletas('Eventos Corazonistas','Lo que nos une','eventos')">
+            <div class="card-img-wrap">
+                <img src="img/pastoral.jpg" alt="Eventos">
+                <div class="card-tag">Eventos</div>
+            </div>
+            <div class="card-body">
+                <h3>Eventos Corazonistas</h3>
+                <p>Mira información sobre nuestros eventos pasados y próximos.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
+            </div>
+        </div>
+        <div class="card" onclick="galletas('Prom 2026','Una noche para recordar','prom')">
+            <div class="card-img-wrap">
+                <img src="img/pastoral.jpg" alt="Prom">
+                <div class="card-tag">Especial</div>
+            </div>
+            <div class="card-body">
+                <h3>Prom 2026</h3>
+                <p>Conoce a los protagonistas de la Prom 2026 y sus historias.</p>
+                <button class="btn-outline">Ver más <span>→</span></button>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- ==========================================
-     SECCIÓN RESERVAS
-     ========================================== -->
-<section class="reservas" id="reserva">
-    <h2>Reservar Mesa</h2>
-
-    <div class="form-reserva">
-        <input type="text" id="nombreCliente" placeholder="Nombre del cliente">
-        <input type="date" id="fechaReserva">
-        <input type="time" id="horaReserva">
-        <select id="personas">
-            <option value="1">1 Persona</option>
-            <option value="2">2 Personas</option>
-            <option value="3">3 Personas</option>
-            <option value="4">4 Personas</option>
-        </select>
-        <button id="btnReservar" class="btn-primary">Reservar Ahora</button>
-        <button id="btnCancelar">Cancelar Última Reserva</button>
-    </div>
-
-    <p id="mensajeReserva"></p>
-
-    <h3>Mesas Disponibles</h3>
-
-    <div id="contadorMesas">
-        <span id="mesasDisponiblesNum">5</span> de
-        <span id="mesasTotalNum">5</span> mesas disponibles
-        &nbsp;|&nbsp;
-        <span id="mesasOcupadasNum">0</span> ocupadas
-    </div>
-
-    <button id="btnMostrarMesas">Ver detalle de mesas</button>
-    <ul id="listaMesas"></ul>
-    <p id="resultadoMesas"></p>
-
-    <h3>Lista de Reservas</h3>
-    <ul id="listaReservas"></ul>
-</section>
-
-<!-- ==========================================
-     FOOTER
-     ========================================== -->
+<!-- FOOTER -->
 <footer>
-    <p>1234 Calle Culinaria, Ciudad</p>
-    <p>Llámanos: (123) 456-7890</p>
+    <div class="footer-deco">  Colegio Sagrado Corazón · Marinilla  </div>
+    <p>Marinilla, Antioquia, Colombia</p>
+    <p>Contacto: (123) 456-7890</p>
 </footer>
 
+<script>
+const contenidos = {
+    historia:     { subtitulo: 'Congregación de los Sagrados Corazones', cuerpo: '<p>  <strong>Próximamente:</strong> aquí encontrarás la historia completa de la Congregación fundada por el padre André Coindre.</p>' },
+    'historia-csc': { subtitulo: 'Colegio Sagrado Corazón · Marinilla', cuerpo: '<p>  <strong>Próximamente:</strong> la historia del colegio en Marinilla, sus momentos más importantes y su legado en la comunidad.</p>' },
+    talentos:     { subtitulo: 'Orgullo corazonista', cuerpo: '<p>  <strong>Próximamente:</strong> galería y perfiles de los estudiantes más talentosos del colegio en arte, ciencia y deporte.</p>' },
+    pastoral:     { subtitulo: 'Movimiento Resplandor Corazonista', cuerpo: '<p>  <strong>Próximamente:</strong> información sobre el movimiento pastoral, sus actividades y su misión espiritual.</p>' },
+    logros:       { subtitulo: 'Excelencia académica', cuerpo: '<p>  <strong>Próximamente:</strong> reconocimientos, premios y resultados académicos destacados de nuestros estudiantes.</p>' },
+    seminario:    { subtitulo: 'Formación vocacional', cuerpo: '<p>  <strong>Próximamente:</strong> conoce el seminario corazonista, su formación y sus vocaciones.</p>' },
+    granja:       { subtitulo: 'Conexión con la naturaleza', cuerpo: '<p>  <strong>Próximamente:</strong> galería fotográfica y descripción de la granja corazonista.</p>' },
+    semilleros:   { subtitulo: 'Deporte y cultura', cuerpo: '<p>  <strong>Próximamente:</strong> información sobre los semilleros deportivos y culturales del colegio.</p>' },
+    eventos:      { subtitulo: 'Lo que nos une', cuerpo: '<p>  <strong>Próximamente:</strong> agenda de eventos pasados y próximos del colegio corazonista.</p>' },
+    prom:         { subtitulo: 'Promoción 2026', cuerpo: '<p>  <strong>Próximamente:</strong> conoce a los estudiantes de la Prom 2026 y su historia juntos.</p>' },
+    Asopadres:      {subtitulo: 'Aso', cuerpo: '<p>  <strong>Próximamente:</strong> La Asociación de Padres del Colegio Seminario Corazonistas apoya la formación de los estudiantes y fortalece la comunidad educativa mediante la participación y colaboración entre familias y colegio.</p>' },
+};
 
-<!-- ==========================================
-      DOM 
-     ========================================== -->
-<section class="taller-dom">
-    <h2>Panel de Control </h2>
+function galletas(titulo, subtitulo, clave) {
+    const data = contenidos[clave] || {};
+    document.getElementById('botonTitulo').textContent = titulo;
+    document.getElementById('botonSubtitulo').textContent = data.subtitulo || subtitulo;
+    document.getElementById('botonCuerpo').innerHTML = data.cuerpo || '<p>Contenido en construcción.</p>';
+    document.getElementById('botonOverlay').classList.add('activo');
+    document.body.style.overflow = 'hidden';
+}
 
-    <!-- PARTE 1 — Selección de Elementos -->
-    <div class="dom-bloque">
-        <h3>Parte 1 · Selección de Elementos</h3>
-        <p id="eslogan">La mejor experiencia gastronómica</p>
-        <ul id="lista-menu">
-            <li id="plato1" class="plato-menu">Entrada Especial</li>
-            <li id="plato2" class="plato-menu">Filete Premium</li>
-            <li id="plato3" class="plato-menu">Postre de la Casa</li>
-            <li id="plato4" class="plato-menu">Bebida Artesanal</li>
-        </ul>
-    </div>
+function cGalletas() {
+    document.getElementById('botonOverlay').classList.remove('activo');
+    document.body.style.overflow = '';
+}
 
-    <!-- PARTE 2 — Modificación de Contenido -->
-    <div class="dom-bloque">
-        <h3>Parte 2 · Modificación de Contenido</h3>
-
-        <div class="dom-fila">
-            <input type="text" id="nuevoNombre" placeholder="Nuevo nombre del restaurante">
-            <button id="btnActualizar">Actualizar Nombre</button>
-        </div>
-
-        <div class="dom-fila">
-            <input type="text" id="nuevoPlato" placeholder="Nuevo plato">
-            <button id="btnAgregar">Agregar al Menú</button>
-            <button id="btnEliminar">Eliminar último plato</button>
-        </div>
-
-        <div class="dom-fila">
-            <p id="estadoMesa">Estado: Mesa disponible</p>
-            <button id="btnMesa">Cambiar disponibilidad</button>
-        </div>
-    </div>
-
-    <!-- PARTE 3 — Manipulación de Estilos -->
-    <div class="dom-bloque">
-        <h3>Parte 3 · Manipulación de Estilos</h3>
-
-        <div class="dom-fila">
-            <button id="modoDia">☀️ Modo Día</button>
-            <button id="modoNoche">🌙 Modo Noche</button>
-            <button id="modoEspecial">✨ Modo Especial</button>
-        </div>
-
-        <div class="dom-fila">
-            <button id="btnDestacar">Destacar plato del día</button>
-            <button id="btnOferta">Agregar Oferta</button>
-            <button id="btnQuitarOferta">Quitar Oferta</button>
-        </div>
-
-        <div class="dom-fila">
-            <button id="btnMenu">Cambiar Eslogan</button>
-            <button id="btnMostrar">Mostrar / Ocultar Menú</button>
-        </div>
-
-
-</section>
-
-<script src="app.js"></script>
+document.addEventListener('keydown', e => { if (e.key === 'Escape') cGalletas(); });
+</script>
 </body>
 </html>
