@@ -31,6 +31,9 @@
             <p>Contenido en construcción...</p>
         </div>
         <button class="modal-close" onclick="cGalletas()">✕ Cerrar</button>
+        <button class="modal-close" id='hiper' onclick="window.location.href='Talentos.html'">
+  ✕ expandir
+</button>
     </div>
 </div>
 
@@ -38,23 +41,25 @@
 <section class="hero">
     <nav class="hero2">
         <div class="logo">
-            <img src="img/Logo corazonista 40 años-02.png" alt="Logo Corazonista">
+            <a href="https://csc.edu.co" target="_blank">
+                <img src="img/Logo corazonista 40 años-02.png" alt="Logo Corazonista">
+            </a>
         </div>
         <ul class="menu-nav">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#menu">Historia</a></li>
-            <li><a href="#menu">Talentos</a></li>
-            <li><a href="#menu">Noticias</a></li>
-            <li><a href="#menu">Deportivo</a></li>
-            <li><a href="#menu">Semilleros</a></li>
-            <li><a href="#menu">Pastoral</a></li>
-            <li><a href="#menu">Eventos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historiaCSC.html">Historia</a></li>
+            <li><a href="Talentos.html">Talentos</a></li>
+            <li><a href="logros.html">Logros</a></li>
+            <li><a href="asopadres.html">Asopadres</a></li>
+            <li><a href="semilleros.html">Semilleros</a></li>
+            <li><a href="pastoral.html">Pastoral</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
         </ul>
     </nav>
 
     <div class="contenido" id="inicio">
         <div class="hero-badge">  Edición 2026  </div>
-        <h1 id="titulo-restaurante">Bienvenidos a la<br><em>Revista Corazonista</em></h1>
+        <div class="nombrechoco"><h1 id="titulo-restaurante">Bienvenidos a la<br><em>Revista Corazonista</em></h1></div>
         <p class="hero-sub">Marinilla · Antioquia · Colombia</p>
     </div>
 </section>
@@ -70,11 +75,11 @@
     <div class="menu-container">
         <div class="card" onclick="galletas('Nuestra Historia','La historia de la Congregación','historia')">
             <div class="card-img-wrap">
-                <img src="img/primerFondo.jpg" alt="Nuestra Historia">
+                <img src="img/historia.png" alt="Nuestra Historia">
                 <div class="card-tag">Historia</div>
             </div>
             <div class="card-body">
-                <h3>Nuestra Historia</h3>
+                <h3>Historia de la comunidad</h3>
                 <p>Desde la fe ardiente del padre André Coindre, hasta el amor de los hermanos de la actualidad.</p>
                 <button class="btn-outline">Ver más <span>→</span></button>
             </div>
@@ -86,7 +91,7 @@
                 <div class="card-tag">Historia</div>
             </div>
             <div class="card-body">
-                <h3>Historia CSC</h3>
+                <h3>Historia Colegio Seminario Corazonista Marinilla</h3>
                 <p>En Marinilla se esconde un hogar maravilloso donde se han vivido momentos inolvidables.</p>
                 <button class="btn-outline">Ver más <span>→</span></button>
             </div>
@@ -134,7 +139,7 @@
     <div class="menu-container">
         <div class="card" onclick="galletas('Nuestro Seminario','Formación vocacional','seminario')">
             <div class="card-img-wrap">
-                <img src="img/pastoral.jpg" alt="Seminario">
+                <img src="img/Seminariocsc.PNG" alt="Seminario">
                 <div class="card-tag">Fe</div>
             </div>
             <div class="card-body">
@@ -146,7 +151,7 @@
 
         <div class="card" onclick="galletas('Asopadres','Asociación de padres de familia','Asopadres')">
             <div class="card-img-wrap">
-                <img src="img/pastoral.jpg" alt="Asopadres">
+                <img src="img/asopadres.jpg" alt="Asopadres">
                 <div class="card-tag">Aso</div>
             </div>
             <div class="card-body">
@@ -158,7 +163,7 @@
 
         <div class="card" onclick="galletas('Semilleros Corazonistas','Deporte y cultura','semilleros')">
             <div class="card-img-wrap">
-                <img src="img/pastoral.jpg" alt="Semilleros">
+                <img src="img/semilleros.jpg" alt="Semilleros">
                 <div class="card-tag">Semilleros</div>
             </div>
             <div class="card-body">
@@ -170,7 +175,7 @@
 
         <div class="card" onclick="galletas('Eventos Corazonistas','Lo que nos une','eventos')">
             <div class="card-img-wrap">
-                <img src="img/pastoral.jpg" alt="Eventos">
+                <img src="img/eventos.jpg" alt="Eventos">
                 <div class="card-tag">Eventos</div>
             </div>
             <div class="card-body">
@@ -181,7 +186,7 @@
         </div>
         <div class="card" onclick="galletas('Prom 2026','Una noche para recordar','prom')">
             <div class="card-img-wrap">
-                <img src="img/pastoral.jpg" alt="Prom">
+                <img src="img/prom2026.jpeg" alt="Prom">
                 <div class="card-tag">Especial</div>
             </div>
             <div class="card-body">
@@ -195,24 +200,35 @@
 
 <!-- FOOTER -->
 <footer>
-    <div class="footer-deco">  Colegio Sagrado Corazón · Marinilla  </div>
+    <div class="footer-deco">  Colegio Seminario Corazonista · Marinilla  </div>
     <p>Marinilla, Antioquia, Colombia</p>
-    <p>Contacto: (123) 456-7890</p>
+    <p>Contacto:  318 547 8971 - 317 429 3025 </p>
+    <p>Hecho por: Juan Alejandro Ossa // Samuel Lotero // Jacob López // Miguel Angel Villegas // Nicolás Correa</p>
 </footer>
 
 <script>
 const contenidos = {
-    historia:     { subtitulo: 'Congregación de los Sagrados Corazones', cuerpo: '<p>  <strong>Próximamente:</strong> aquí encontrarás la historia completa de la Congregación fundada por el padre André Coindre.</p>' },
-    'historia-csc': { subtitulo: 'Colegio Sagrado Corazón · Marinilla', cuerpo: '<p>  <strong>Próximamente:</strong> la historia del colegio en Marinilla, sus momentos más importantes y su legado en la comunidad.</p>' },
-    talentos:     { subtitulo: 'Orgullo corazonista', cuerpo: '<p>  <strong>Próximamente:</strong> galería y perfiles de los estudiantes más talentosos del colegio en arte, ciencia y deporte.</p>' },
-    pastoral:     { subtitulo: 'Movimiento Resplandor Corazonista', cuerpo: '<p>  <strong>Próximamente:</strong> información sobre el movimiento pastoral, sus actividades y su misión espiritual.</p>' },
-    logros:       { subtitulo: 'Excelencia académica', cuerpo: '<p>  <strong>Próximamente:</strong> reconocimientos, premios y resultados académicos destacados de nuestros estudiantes.</p>' },
-    seminario:    { subtitulo: 'Formación vocacional', cuerpo: '<p>  <strong>Próximamente:</strong> conoce el seminario corazonista, su formación y sus vocaciones.</p>' },
-    granja:       { subtitulo: 'Conexión con la naturaleza', cuerpo: '<p>  <strong>Próximamente:</strong> galería fotográfica y descripción de la granja corazonista.</p>' },
-    semilleros:   { subtitulo: 'Deporte y cultura', cuerpo: '<p>  <strong>Próximamente:</strong> información sobre los semilleros deportivos y culturales del colegio.</p>' },
-    eventos:      { subtitulo: 'Lo que nos une', cuerpo: '<p>  <strong>Próximamente:</strong> agenda de eventos pasados y próximos del colegio corazonista.</p>' },
-    prom:         { subtitulo: 'Promoción 2026', cuerpo: '<p>  <strong>Próximamente:</strong> conoce a los estudiantes de la Prom 2026 y su historia juntos.</p>' },
-    Asopadres:      {subtitulo: 'Aso', cuerpo: '<p>  <strong>Próximamente:</strong> La Asociación de Padres del Colegio Seminario Corazonistas apoya la formación de los estudiantes y fortalece la comunidad educativa mediante la participación y colaboración entre familias y colegio.</p>' },
+   historia: {
+  link: 'historiaC.html',
+  subtitulo: 'Congregación de los Hermanos del Sagrado Corazón',
+  cuerpo: `
+    <p><strong>Descubre:</strong>  en valores cristianos como la fraternidad, el servicio y el amor al prójimo, extendiendo hoy su labor a numerosos países del mundo.</p>
+
+    <video controls width="100%">
+      <source src="Media/video padre.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  `
+},
+    'historia-csc': { link: 'historiaCSC.html',subtitulo: 'Colegio Seminario Corazonista · Marinilla', cuerpo: '<p>  <strong>Descubre:</strong> la historia del colegio en Marinilla, sus momentos más importantes y su legado en la comunidad.</p>' },
+    talentos:     { link: 'Talentos.html',subtitulo: 'Orgullo corazonista', cuerpo: '<p>  <strong>Descubre:</strong> galería y perfiles de los estudiantes más talentosos del colegio en arte, ciencia y deporte.</p>' },
+    pastoral:     { link: 'pastoral.html',subtitulo: 'Movimiento Resplandor Corazonista', cuerpo: '<p>  <strong>Descubre:</strong> información sobre el movimiento pastoral, sus actividades y su misión espiritual.</p>' },
+    logros:       { link: 'logros.html',subtitulo: 'Excelencia académica', cuerpo: '<p>  <strong>Descubre:</strong> reconocimientos, premios y resultados académicos destacados de nuestros estudiantes.</p>' },
+    seminario:    { link: 'seminario.html',subtitulo: 'Formación vocacional', cuerpo: '<p>  <strong>Descubre:</strong> conoce el seminario corazonista, su formación y sus vocaciones.</p>' },
+    semilleros:   { link: 'semilleros.html',subtitulo: 'Deporte y cultura', cuerpo: '<p>  <strong>Descubre:</strong> información sobre los semilleros deportivos y culturales del colegio.</p>' },
+    eventos:      { link: 'eventos.html',subtitulo: 'Lo que nos une', cuerpo: '<p>  <strong>Descubre:</strong> agenda de eventos pasados y próximos del colegio corazonista.</p>' },
+    prom:         { link: 'prom.html',subtitulo: 'Promoción 2026', cuerpo: '<p>  <strong>Descubre:</strong> conoce a los estudiantes de la Prom 2026 y su historia juntos.</p>' },
+    Asopadres:      {link: 'asopadres.html',subtitulo: 'Aso', cuerpo: '<p>  <strong>Descubre:</strong> La Asociación de Padres del Colegio Seminario Corazonistas apoya la formación de los estudiantes y fortalece la comunidad educativa mediante la participación y colaboración entre familias y colegio.</p>' },
 };
 
 function galletas(titulo, subtitulo, clave) {
@@ -220,6 +236,7 @@ function galletas(titulo, subtitulo, clave) {
     document.getElementById('modalTitulo').textContent = titulo;
     document.getElementById('modalSubtitulo').textContent = data.subtitulo || subtitulo;
     document.getElementById('modalCuerpo').innerHTML = data.cuerpo || '<p>Contenido en construcción.</p>';
+    document.getElementById('hiper').onclick = () => { window.location.href = `${data.link}`};
     document.getElementById('modalOverlay').classList.add('activo');
     document.body.style.overflow = 'hidden';
 }
